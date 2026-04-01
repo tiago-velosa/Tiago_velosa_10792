@@ -1,0 +1,6 @@
+@ApiAlunosProxy_HostAddress = http://localhost:5173
+
+GET {{ApiAlunosProxy_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
