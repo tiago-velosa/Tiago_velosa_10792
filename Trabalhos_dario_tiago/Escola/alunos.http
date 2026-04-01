@@ -1,0 +1,54 @@
+@baseUrl = http://localhost:3000/api
+
+### 1. Listar todos os alunos
+GET {{baseUrl}}/alunos
+
+### 2. Obter aluno ID 1
+GET {{baseUrl}}/alunos/1
+
+### 3. Criar aluno (Sucesso)
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+    "nome": "Ricardo",
+    "idade": 15,
+    "curso": "Informatica"
+}
+
+### 4. Criar aluno (Erro: Idade < 10)
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+    "nome": "Hugo",
+    "idade": 8,
+    "curso": "Informatica"
+}
+
+### 5. Criar aluno (Erro: Curso invÃ¡lido)
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+    "nome": "Ana",
+    "idade": 12,
+    "curso": "Culinaria"
+}
+
+### 6. Atualizar aluno ID 1
+PUT {{baseUrl}}/alunos/1
+Content-Type: application/json
+
+{
+    "nome": "Joao Silva",
+    "idade": 16,
+    "curso": "Informatica"
+}
+
+### 7. Eliminar aluno (Erro: Sem Admin Role)
+DELETE {{baseUrl}}/alunos/1
+
+### 8. Eliminar aluno (Sucesso: Com Admin Role)
+DELETE {{baseUrl}}/alunos/1
+Role: Admin

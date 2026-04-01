@@ -1,0 +1,13 @@
+{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2026-04-01T10:41:31.517Z"}
+{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2026-04-01T10:41:31.573Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] Open for business...","timestamp":"2026-04-01T10:41:31.581Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59491 => GET /api/alunos","timestamp":"2026-04-01T10:42:11.336Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59492 => GET /api/alunos/1","timestamp":"2026-04-01T10:42:15.074Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59493 => POST /api/alunos","timestamp":"2026-04-01T10:42:15.103Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59494 => POST /api/alunos","timestamp":"2026-04-01T10:42:15.134Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59495 => POST /api/alunos","timestamp":"2026-04-01T10:42:15.144Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59496 => PUT /api/alunos/1","timestamp":"2026-04-01T10:42:15.149Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59497 => DELETE /api/alunos/1","timestamp":"2026-04-01T10:42:15.176Z"}
+{"level":"info","message":"[http:3000 API-Gestao-Alunos-Completa] ::1:59498 => DELETE /api/alunos/1","timestamp":"2026-04-01T10:42:15.182Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-04-01T10:45:32.487Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-04-01T10:45:34.683Z"}

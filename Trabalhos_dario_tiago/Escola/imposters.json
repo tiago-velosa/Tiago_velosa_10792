@@ -1,0 +1,66 @@
+{
+  "imposters": [
+    {
+      "port": 3000,
+      "protocol": "http",
+      "name": "API-Gestao-Alunos-Completa",
+      "stubs": [
+        {
+          "name": "DELETE - Erro: Sem Permissao Admin",
+          "predicates": [
+            { "equals": { "method": "DELETE", "path": "/api/alunos/1" } },
+            { "not": { "equals": { "headers": { "Role": "Admin" } } } }
+          ],
+          "responses": [{ "is": { "statusCode": 403, "body": { "error": "Apenas administradores podem eliminar alunos" } } }]
+        },
+        {
+          "name": "DELETE - Sucesso Admin",
+          "predicates": [
+            { "equals": { "method": "DELETE", "path": "/api/alunos/1", "headers": { "Role": "Admin" } } }
+          ],
+          "responses": [{ "is": { "statusCode": 204 } }]
+        },
+        {
+          "name": "POST - Erro: Idade < 10",
+          "predicates": [
+            { "equals": { "method": "POST", "path": "/api/alunos" } },
+            { "matches": { "body": { "idade": "^[0-9]$" } } }
+          ],
+          "responses": [{ "is": { "statusCode": 400, "body": { "error": "Idade minima nao atingida" } } }]
+        },
+        {
+          "name": "POST - Erro: Curso Inexistente",
+          "predicates": [
+            { "equals": { "method": "POST", "path": "/api/alunos" } },
+            { "not": { "contains": { "body": "Informatica" } } },
+            { "not": { "contains": { "body": "Artes" } } }
+          ],
+          "responses": [{ "is": { "statusCode": 404, "body": { "error": "Curso nao encontrado" } } }]
+        },
+        {
+          "name": "POST - Sucesso Criar",
+          "predicates": [{ "equals": { "method": "POST", "path": "/api/alunos" } }],
+          "responses": [{ "is": { "statusCode": 201, "body": { "id": 100, "status": "created" } } }]
+        },
+        {
+          "name": "PUT - Sucesso Atualizar",
+          "predicates": [{ "equals": { "method": "PUT", "path": "/api/alunos/1" } }],
+          "responses": [{ "is": { "statusCode": 200, "body": { "status": "updated" } } }]
+        },
+        {
+          "name": "GET - Aluno Especifico",
+          "predicates": [{ "equals": { "method": "GET", "path": "/api/alunos/1" } }],
+          "responses": [{ "is": { "statusCode": 200, "body": { "id": 1, "nome": "Joao", "idade": 15, "curso": "Informatica" } } }]
+        },
+        {
+          "name": "GET - Listar Todos",
+          "predicates": [{ "equals": { "method": "GET", "path": "/api/alunos" } }],
+          "responses": [{ "is": { "statusCode": 200, "body": [
+            { "id": 1, "nome": "Joao", "curso": "Informatica" },
+            { "id": 2, "nome": "Maria", "curso": "Artes" }
+          ]}}]
+        }
+      ]
+    }
+  ]
+}

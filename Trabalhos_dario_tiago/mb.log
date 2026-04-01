@@ -1,0 +1,24 @@
+{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2026-04-01T10:00:16.943Z"}
+{"level":"info","message":"[mb:2525] PUT /imposters","timestamp":"2026-04-01T10:00:16.995Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] Open for business...","timestamp":"2026-04-01T10:00:17.005Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60286 => GET /api/marcas","timestamp":"2026-04-01T10:01:17.831Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60287 => GET /api/cars?brand=Toyota","timestamp":"2026-04-01T10:01:17.870Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60288 => GET /api/cars","timestamp":"2026-04-01T10:01:17.901Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60289 => POST /api/login","timestamp":"2026-04-01T10:01:17.935Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60290 => POST /api/login","timestamp":"2026-04-01T10:01:17.960Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60291 => POST /api/users","timestamp":"2026-04-01T10:01:17.969Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60292 => POST /api/users","timestamp":"2026-04-01T10:01:17.973Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60293 => POST /api/temperature","timestamp":"2026-04-01T10:01:18.002Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60294 => POST /api/temperature","timestamp":"2026-04-01T10:01:18.007Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60295 => POST /api/tasks","timestamp":"2026-04-01T10:01:18.037Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60296 => POST /api/tasks","timestamp":"2026-04-01T10:01:18.041Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60297 => POST /api/auth","timestamp":"2026-04-01T10:01:18.069Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60298 => GET /api/profile","timestamp":"2026-04-01T10:01:18.100Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60299 => GET /api/profile","timestamp":"2026-04-01T10:01:18.124Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60300 => POST /api/qualquer","timestamp":"2026-04-01T10:01:18.128Z"}
+{"level":"info","message":"[http:8080 API-Automoveis-e-Gestao] ::1:60301 => GET /api/inexistente","timestamp":"2026-04-01T10:01:18.133Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-04-01T10:01:30.082Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-04-01T10:01:32.642Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-04-01T10:01:34.991Z"}
+{"level":"info","message":"[mb:2525] GET /images/book.jpg","timestamp":"2026-04-01T10:17:38.127Z"}
+{"level":"error","message":"[mb:2525] ::1:58758 transmission error X=> {\"code\":\"ERR_HTTP_REQUEST_TIMEOUT\"}","timestamp":"2026-04-01T10:18:46.969Z"}
